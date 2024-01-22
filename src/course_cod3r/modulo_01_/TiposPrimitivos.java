@@ -3,7 +3,7 @@ package course_cod3r.modulo_01_;
 public class TiposPrimitivos {
 
 	@SuppressWarnings("unused")
-	public static void main(String[] args) {
+	public static void main(Strings[] args) {
 		
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\ _________INTEIROS_________//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 		
@@ -20,14 +20,14 @@ public class TiposPrimitivos {
 		int inteiroNegativo = -1;
 		
 		//Long (8 Byte)(64 Bits) 
-		long longPositivo = 1;
-		long longNegativo = -1;
+		long longPositivo = 1L;
+		long longNegativo = -1L;
 		
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\_________DECIMAIS_________//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 		
 		//float (4 Byte) (32 Bits)
-		float floatPositivo = 1.0f;
-		float floatNegativo = -1.0f;
+		float floatPositivo = 1.0F;
+		float floatNegativo = -1.0F;
 		
 		//double (8 Byte) (64 Bits)
 		double doublePositivo = 1.0;
@@ -55,6 +55,5 @@ public class TiposPrimitivos {
 		var e = true;
 		
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//
-		
 	}
 }

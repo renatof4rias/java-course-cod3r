@@ -2,7 +2,7 @@ package course_cod3r.modulo_01_;
 
 public class Comentarios {
 
-	public static void main(String[] args) {
+	public static void main(Strings[] args) {
 
 		
 		//COMENTARIO DE LINHA

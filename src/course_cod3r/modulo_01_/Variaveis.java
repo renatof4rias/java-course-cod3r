@@ -3,7 +3,7 @@ package course_cod3r.modulo_01_;
 public class Variaveis {
 
 	@SuppressWarnings("unused")
-	public static void main(String[] args) {
+	public static void main(Strings[] args) {
 		
 /*
  					      _________		__ 				              __________    __     ________         

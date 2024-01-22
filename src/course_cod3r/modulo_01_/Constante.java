@@ -2,7 +2,7 @@ package course_cod3r.modulo_01_;
 
 public class Constante {
 	@SuppressWarnings("unused")
-	public static void main(String[] args) {
+	public static void main(Strings[] args) {
 		
 // Tipo Primitivo
 //		tipo     nome     valor      ;
