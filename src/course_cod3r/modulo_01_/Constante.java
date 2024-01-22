@@ -1,19 +1,9 @@
 package course_cod3r.modulo_01_;
 
-public class Variaveis {
-
+public class Constante {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
-/*
- 					      _________		__ 				              __________    __     ________         
-\ 	     /     /\	     |	       |   |  |      /\	   \        /    |  ________|  |  |   |  ______|            
- \	    /     /  \     	 |         |   |  |     /  \    \      /     | |_______    |  |   | |______                   
-  \	   /     /    \      |   ______|   |  |    /    \    \    /      |  _______|   |  |   |______  |                              
-   \  /	    /______\     |  |  \ \     |  |   /______\    \  /	     | |________   |  |    ______| |                        
-    \/	   /        \    |__|   \_\    |__|  /        \    \/	     |__________|  |__|   |________|                                       
-		
- */
 // Tipo Primitivo
 //		tipo     nome     valor      ;
 		int		   a   =     0       ;           
