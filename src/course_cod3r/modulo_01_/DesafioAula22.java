@@ -6,8 +6,11 @@ public class DesafioAula22 {
 
 		//Transformar Celsius para Fahrenheit
 		
+		final double ab = 9.0/5.0;
+		final double ba = 5.0/9.0;
+		
 		double celsius = 20;
-		double calculo = (9.0/5.0 * celsius) + 32;
+		double calculo = (ab * celsius) + 32;
 		double fahrenheit = calculo;
 		
 		
@@ -18,7 +21,7 @@ public class DesafioAula22 {
 		//Transformar Fahrenheit para Celsius
 		
 		fahrenheit = 68; 
-		calculo = (5.0/9.0) * (fahrenheit - 32);
+		calculo = (ba) * (fahrenheit - 32);
 		celsius = calculo;
 		
 		System.err.println("Fahrenheit para Celsius ↓");
@@ -27,3 +30,4 @@ public class DesafioAula22 {
 	}
 
 }
+
