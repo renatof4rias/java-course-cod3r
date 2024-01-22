@@ -7,7 +7,7 @@ public class DesafioAula22 {
 		//Transformar Celsius para Fahrenheit
 		
 		double celsius = 20;
-		double calculo = (1.8 * celsius) + 32;
+		double calculo = (9.0/5.0 * celsius) + 32;
 		double fahrenheit = calculo;
 		
 		
