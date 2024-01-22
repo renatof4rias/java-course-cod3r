@@ -25,9 +25,9 @@ public class Constante {
 	                                  
 // Atribuição
 		
-		double pi = 3.14;
-		double raio = 3.4;		
-		double area = pi * raio * raio;   
+final		double pi = 3.14;
+final		double raio = 3.4;		
+            double area = pi * raio * raio;   
 		
 		
 		System.out.println("NOME DA VARIAVEL");
