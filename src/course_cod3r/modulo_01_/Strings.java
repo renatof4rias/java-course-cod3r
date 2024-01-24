@@ -1,5 +1,7 @@
 package course_cod3r.modulo_01_;
 
+import java.util.Scanner;
+
 public class Strings {
 	public static void main(String[] args) {
 
@@ -11,5 +13,23 @@ public class Strings {
 
 		System.out.println(b);
 
+		Scanner sc = new Scanner(System.in);
+
+		int a = 1;
+		  a = 1;
+		  a = 1;
+		  a = 1;
+		int  a = 1;
+		int a = 1;
+		int a = 1;
+		int a = 1;
+		int a = 1;
+		int a = 1;
+		int a = 1;
+		int a = 1;
+		int a = 1;
+		 a = 1;
+		int a = 1;
+		
 	}
 }
