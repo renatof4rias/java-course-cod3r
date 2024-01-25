@@ -1,4 +1,6 @@
-package course_cod3r.modulo_01_;
+package DesafiosModulo1;
+
+import course_cod3r.modulo_01_.Strings;
 
 public class DesafioAula22 {
 

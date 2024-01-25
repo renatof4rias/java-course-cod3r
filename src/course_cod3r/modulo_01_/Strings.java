@@ -3,6 +3,7 @@ package course_cod3r.modulo_01_;
 import java.util.Scanner;
 
 public class Strings {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		String s = "renato farias";
@@ -16,20 +17,7 @@ public class Strings {
 		Scanner sc = new Scanner(System.in);
 
 		int a = 1;
-		  a = 1;
-		  a = 1;
-		  a = 1;
-		int  a = 1;
-		int a = 1;
-		int a = 1;
-		int a = 1;
-		int a = 1;
-		int a = 1;
-		int a = 1;
-		int a = 1;
-		int a = 1;
-		 a = 1;
-		int a = 1;
-		
+
+		sc.close();
 	}
 }
