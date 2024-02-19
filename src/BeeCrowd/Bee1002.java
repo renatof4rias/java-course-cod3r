@@ -8,6 +8,7 @@ import course_cod3r.modulo_03_desafios.Pessoa;
 
 public class Bee1002 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
