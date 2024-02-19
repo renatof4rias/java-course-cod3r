@@ -1,4 +1,4 @@
-package DesafiosModulo1;
+package course_cod3r.modulo_01_;
 
 import java.util.Scanner;
 
