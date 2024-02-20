@@ -14,6 +14,7 @@ public class Cliente {
 		 
 	}
 	
+
 	public void setCPF(String cpf) {
 		this.cpf = cpf.replaceAll("(\\d{3})(\\d{3})(\\d{3})(\\d{2})", "$1.$2.$3-$4");
 	}
