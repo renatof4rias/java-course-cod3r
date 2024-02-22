@@ -20,6 +20,9 @@ public class CompraTeste {
 		p1.valor = 26.99;
 		
 		p2.codigo = "02";
+		p2.nome = "Feijão";
+		p2.quantidade = 1;
+		p2.valor = 6.99;
 		
 		l1.InfoProdutos.add(p1);
 		l1.InfoProdutos.add(p2);
@@ -103,7 +106,6 @@ public class CompraTeste {
 		
 		
 		System.out.println(ic.impressora(c1));
-		System.out.println("_________________________________________");
 		l1.listaCompras();
 		
 		sc.close();

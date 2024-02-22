@@ -18,7 +18,7 @@ public class ListaDeCompras {
 		var quantidade = produtos.quantidade;
 		var valor = produtos.valor;
 		
-		System.out.println("| " + cod + " | "  + nome + " | " + quantidade + " | " + valor + " |" );
+		System.out.println("|   " + cod + "   |           "  + nome + "       |            " + quantidade + "          | " + valor + "  |" );
 		
 		
 		
