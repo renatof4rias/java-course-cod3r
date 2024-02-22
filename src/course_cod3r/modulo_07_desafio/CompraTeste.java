@@ -10,8 +10,7 @@ public class CompraTeste {
 		Cliente c1 = new Cliente();
 		InfoCliente ic = new InfoCliente();
 		
-		
-		
+//========================================================================================================//		
 		System.out.print("INSERIR CLIENTE ? 1- sim/ 2- nao |");
 		int simOuNao = sc.nextInt();
 		sc.nextLine();
@@ -25,6 +24,7 @@ public class CompraTeste {
 			System.out.println("OPÇÃO INVALIDA");
 		}
 		
+//========================================================================================================//	
 		
 		System.out.print("INSERIR CPF ? 1- sim/ 2- nao |");
 		simOuNao = sc.nextInt();
@@ -46,8 +46,7 @@ public class CompraTeste {
 			System.out.println("OPÇÃO INVALIDA");
 		}
 		
-		
-		
+//========================================================================================================//			
 		
 		System.out.print("SOLICITAR ENTREGA ? 1- sim/ 2- nao |");
 		simOuNao = sc.nextInt();
@@ -71,7 +70,7 @@ public class CompraTeste {
 			c1.casa = sc.nextLine();
 			System.out.print("INSIRA O COMPLEMENTO: ");
 			c1.complemento = sc.nextLine();
-			
+		
 		} else if (simOuNao == 2){	
 			c1.setCEP(" ");
 			c1.bairro = " ";
@@ -81,16 +80,6 @@ public class CompraTeste {
 		}else if (simOuNao != 1 || simOuNao != 2){	
 			System.out.println("OPÇÃO INVALIDA");
 		}
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
 		
 		 
 		System.out.println(ic.impressora(c1));
