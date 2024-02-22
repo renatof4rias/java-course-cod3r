@@ -11,21 +11,12 @@ public class CompraTeste {
 		InfoCliente ic = new InfoCliente();
 		Produto p1 = new Produto();
 		Produto p2 = new Produto();
+		Produto p3 = new Produto();
+		Produto p4 = new Produto();
+		Produto p5 = new Produto();
 		ListaDeCompras l1 = new ListaDeCompras();
 		
 		
-		p1.codigo = "01";
-		p1.nome = "Arroz";
-		p1.quantidade = 1;
-		p1.valor = 26.99;
-		
-		p2.codigo = "02";
-		p2.nome = "Feijão";
-		p2.quantidade = 1;
-		p2.valor = 6.99;
-		
-		l1.InfoProdutos.add(p1);
-		l1.InfoProdutos.add(p2);
 		
 //========================================================================================================//		
 		System.out.print("INSERIR CLIENTE ? 1- sim/ 2- nao |");
@@ -99,6 +90,38 @@ public class CompraTeste {
 		}
 //========================================================================================================//			
 
+		p1.codigo = "01";
+		p1.nome = "Arroz";
+		p1.quantidade = 3;
+		p1.valor = 26.99;
+		
+		p2.codigo = "02";
+		p2.nome = "Feijão";
+		p2.quantidade = 4;
+		p2.valor = 6.99;
+		
+		p3.codigo = "03";
+		p3.nome = "Macarrão";
+		p3.quantidade = 2;
+		p3.valor = 4.50;
+		
+		p4.codigo = "04";
+		p4.nome = "Sal";
+		p4.quantidade = 1;
+		p4.valor = 1.99;
+		
+		p5.codigo = "05";
+		p5.nome = "Molho de Tomate";
+		p5.quantidade = 4;
+		p5.valor = 9.25;
+		
+		l1.InfoProdutos.add(p1);
+		l1.InfoProdutos.add(p2);
+		l1.InfoProdutos.add(p3);
+		l1.InfoProdutos.add(p4);
+		l1.InfoProdutos.add(p5);
+		
+		
 		
 		
 		

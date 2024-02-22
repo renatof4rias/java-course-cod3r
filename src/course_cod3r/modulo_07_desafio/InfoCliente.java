@@ -13,8 +13,9 @@ public class InfoCliente {
 				"\nRua: " + cliente.rua + 
 				"\nCasa: " + cliente.casa +
 				"\nComplemento: " + cliente.complemento +
-				"\n\n******************************LISTA DE COMPRAS*****************************\n\n" + 
-				"|Codigo|" + "          Produto          |" + "      QNT |" + "        Valor |";
+				"\n\n******************************LISTA DE COMPRAS*****************************\n" + 
+				"---------------------------------------------------------------------------";
+//	+			"|Codigo|" + "          Produto          |" + "      QNT |" + "        Valor |";
 				
 	
 	
