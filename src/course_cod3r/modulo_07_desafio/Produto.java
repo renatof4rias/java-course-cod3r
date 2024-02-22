@@ -6,5 +6,5 @@ public class Produto {
 	public String nome;
 	public int quantidade;
 	public double valor;
-	
+
 }
