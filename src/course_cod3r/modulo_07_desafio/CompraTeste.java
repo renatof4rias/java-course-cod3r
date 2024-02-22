@@ -9,6 +9,20 @@ public class CompraTeste {
 		
 		Cliente c1 = new Cliente();
 		InfoCliente ic = new InfoCliente();
+		Produto p1 = new Produto();
+		Produto p2 = new Produto();
+		ListaDeCompras l1 = new ListaDeCompras();
+		
+		
+		p1.codigo = "01";
+		p1.nome = "Arroz";
+		p1.quantidade = 1;
+		p1.valor = 26.99;
+		
+		p2.codigo = "02";
+		
+		l1.InfoProdutos.add(p1);
+		l1.InfoProdutos.add(p2);
 		
 //========================================================================================================//		
 		System.out.print("INSERIR CLIENTE ? 1- sim/ 2- nao |");
@@ -80,9 +94,17 @@ public class CompraTeste {
 		}else if (simOuNao != 1 || simOuNao != 2){	
 			System.out.println("OPÇÃO INVALIDA");
 		}
+//========================================================================================================//			
+
 		
-		 
+		
+		
+		
+		
+		
 		System.out.println(ic.impressora(c1));
+		System.out.println("_________________________________________");
+		l1.listaCompras();
 		
 		sc.close();
 	}
