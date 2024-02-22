@@ -19,31 +19,31 @@ public class CompraTeste {
 		
 		
 //========================================================================================================//		
-		System.out.print("INSERIR CLIENTE ? 1- sim/ 2- nao |");
+		System.err.print("INSERIR CLIENTE ? 1- sim/ 2- nao |");
 		int simOuNao = sc.nextInt();
 		sc.nextLine();
 		
 		if (simOuNao == 1) {
-			System.out.print("INSIRA O NOME: ");			
+			System.err.print("INSIRA O NOME: ");			
 			c1.nome = sc.nextLine();
 		} else if (simOuNao == 2){	
 			c1.nome = " ";
 		}else if (simOuNao != 1 || simOuNao != 2){	
-			System.out.println("OPÇÃO INVALIDA");
+			System.err.println("OPÇÃO INVALIDA");
 		}
 		
 //========================================================================================================//	
 		
-		System.out.print("INSERIR CPF ? 1- sim/ 2- nao |");
+		System.err.print("INSERIR CPF ? 1- sim/ 2- nao |");
 		simOuNao = sc.nextInt();
 		
 		if (simOuNao == 1) {
-			System.out.print("INSIRA O CPF: ");
+			System.err.print("INSIRA O CPF: ");
 			String cpf = sc.next();
 			
 			while (cpf.length() != 11) {
-				System.out.println("CPF INVALIDO");
-				System.out.print("INSIRA O CPF: ");
+				System.err.println("CPF INVALIDO");
+				System.err.print("INSIRA O CPF: ");
 				cpf = sc.next();
 			}
 			c1.setCPF(cpf);
@@ -51,32 +51,32 @@ public class CompraTeste {
 		} else if (simOuNao == 2){	
 			c1.setCPF(" ");
 		}else if (simOuNao != 1 || simOuNao != 2){	
-			System.out.println("OPÇÃO INVALIDA");
+			System.err.println("OPÇÃO INVALIDA");
 		}
 		
 //========================================================================================================//			
 		
-		System.out.print("SOLICITAR ENTREGA ? 1- sim/ 2- nao |");
+		System.err.print("SOLICITAR ENTREGA ? 1- sim/ 2- nao |");
 		simOuNao = sc.nextInt();
 		
 		if (simOuNao == 1) {
-			System.out.print("INSIRA O CEP: ");
+			System.err.print("INSIRA O CEP: ");
 			String cep = sc.next();
 			sc.nextLine();
 			while (cep.length() != 8) {
-				System.out.println("CEP INVALIDO");
-				System.out.print("INSIRA O CEP: ");
+				System.err.println("CEP INVALIDO");
+				System.err.print("INSIRA O CEP: ");
 				cep = sc.nextLine();
 				sc.nextLine();
 			}
 			c1.setCEP(cep);		
-			System.out.print("INSIRA O BAIRRO: ");			
+			System.err.print("INSIRA O BAIRRO: ");			
 			c1.bairro = sc.nextLine();
-			System.out.print("INSIRA A RUA: ");
+			System.err.print("INSIRA A RUA: ");
 			c1.rua = sc.nextLine();
-			System.out.print("INSIRA A CASA: ");
+			System.err.print("INSIRA A CASA: ");
 			c1.casa = sc.nextLine();
-			System.out.print("INSIRA O COMPLEMENTO: ");
+			System.err.print("INSIRA O COMPLEMENTO: ");
 			c1.complemento = sc.nextLine();
 		
 		} else if (simOuNao == 2){	
@@ -86,7 +86,7 @@ public class CompraTeste {
 			c1.casa = " ";
 			c1.complemento = " ";
 		}else if (simOuNao != 1 || simOuNao != 2){	
-			System.out.println("OPÇÃO INVALIDA");
+			System.err.println("OPÇÃO INVALIDA");
 		}
 //========================================================================================================//			
 
@@ -121,22 +121,36 @@ public class CompraTeste {
 		l1.InfoProdutos.add(p4);
 		l1.InfoProdutos.add(p5);
 		
+		
+		System.out.printf("TOTAL R$ %.2f\n", l1.total());
+		
+		
+		System.err.printf("FORMA DE PAGAMENTO ? 1- DINHEIRO OU PIX / 2- CREDITO OU DEBITO |");
+		simOuNao = sc.nextInt();
+		
+		double Desconto = 0.0;
+		double valorTOTAL = 0.0;
+		String formaPagamento = "";
+		
+		if (simOuNao == 1) {
+			Desconto = 10.0;
+			valorTOTAL = l1.total() - (l1.total() * 0.1);
+			formaPagamento = "DINHEIRO OU PIX";
+		} else if (simOuNao == 2){	
+			Desconto = 5.0;
+			valorTOTAL = l1.total() - (l1.total() * 0.05);
+			formaPagamento = "CREDITO OU DEBITO";
+		}else if (simOuNao != 1 || simOuNao != 2){	
+			System.out.println("OPÇÃO INVALIDA");
+		}
 		System.out.println(ic.impressora(c1));
 		l1.listaCompras();
 		
 		System.out.println("\n*********************************PAGAMENTO*********************************\n ");
-		System.out.print("ATENDENTE: Lucio da Silva");
-		System.out.println("    GUINCHÊ: 05");
-		System.out.printf("TOTAL R$ %.2f", l1.total());
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println("ATENDENTE: Lucio da Silva");
+		System.out.println("Forma de Pagamento: " + formaPagamento);
+		System.out.printf("Desconto: %.0f%%" , Desconto);
+		System.out.printf("\nTOTAL A PAGAR: R$ %.2f", valorTOTAL);
 		
 		sc.close();
 	}
