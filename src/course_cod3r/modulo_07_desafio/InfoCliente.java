@@ -1,7 +1,7 @@
 package course_cod3r.modulo_07_desafio;
 
 public class InfoCliente {
-	
+	public ListaDeCompras listCompras;
 	
 	public String impressora(Cliente cliente) {
 		return  "********************************NOTA FISCAL********************************\n" +
@@ -13,12 +13,10 @@ public class InfoCliente {
 				"\nRua: " + cliente.rua + 
 				"\nCasa: " + cliente.casa +
 				"\nComplemento: " + cliente.complemento +
-				"\n\n******************************LISTA DE COMPRAS*****************************\n" + 
-				"---------------------------------------------------------------------------";
-//	+			"|Codigo|" + "          Produto          |" + "      QNT |" + "        Valor |";
+				"\n\n******************************LISTA DE COMPRAS*****************************\n\n" + 
+				"---------------------------------------------------------------------------" ;
 				
-	
-	
+		
 	}
 	
 }

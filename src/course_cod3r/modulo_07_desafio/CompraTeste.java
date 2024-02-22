@@ -121,15 +121,22 @@ public class CompraTeste {
 		l1.InfoProdutos.add(p4);
 		l1.InfoProdutos.add(p5);
 		
-		
-		
-		
-		
-		
-		
-		
 		System.out.println(ic.impressora(c1));
 		l1.listaCompras();
+		
+		System.out.println("\n*********************************PAGAMENTO*********************************\n ");
+		System.out.print("ATENDENTE: Lucio da Silva");
+		System.out.println("    GUINCHÊ: 05");
+		System.out.printf("TOTAL R$ %.2f", l1.total());
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		sc.close();
 	}
